@@ -3859,7 +3859,6 @@ void *thread_process_bsgs(void *vargp)	{
 			}
 		}
 		base_point = secp->ComputePublicKey(&base_key);
-		
 		km.Set(&base_key);
 		km.Neg();
 		km.Add(&secp->order);
