@@ -3859,7 +3859,7 @@ void *thread_process_bsgs(void *vargp)	{
 			}
 		}
 		base_point = secp->ComputePublicKey(&base_key);
-		printf("\r[+] la pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 0x%s   \r",base_point);
+		
 		km.Set(&base_key);
 		km.Neg();
 		km.Add(&secp->order);
