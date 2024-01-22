@@ -484,7 +484,7 @@ int main(int argc, char **argv)	{
 	
 	
 	
-	printf("[+] Version %s, developed by AlbertoBSD\n",version);
+	printf("[+] Version %s, forged & mod by Paiozama \n",version);
 
 	while ((c = getopt(argc, argv, "deh6MqRSB:b:c:C:E:f:I:k:l:m:N:n:p:r:s:t:v:G:8:z:")) != -1) {
 		switch(c) {
