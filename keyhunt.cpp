@@ -484,7 +484,7 @@ int main(int argc, char **argv)	{
 	
 	
 	
-	printf("[+] Version %s, forged & mod by Paiozama \n",version);
+	printf("[+] Version %s, developed by AlbertoBSD\n",version);
 
 	while ((c = getopt(argc, argv, "deh6MqRSB:b:c:C:E:f:I:k:l:m:N:n:p:r:s:t:v:G:8:z:")) != -1) {
 		switch(c) {
@@ -3945,9 +3945,7 @@ pn.y.ModAdd(&GSn[i].y);
 						pts[i].x.Get32Bytes((unsigned char*)xpoint_raw);
 						r = bloom_check(&bloom_bP[((unsigned char)xpoint_raw[0])],xpoint_raw,32);
 						if(r) {
-							
 							r = bsgs_secondcheck(&base_key,((j*1024) + i),k,&keyfound);
-							
 							if(r)	{
 								hextemp = keyfound.GetBase16();
 								printf("[+] Thread Key found privkey %s   \n",hextemp);
