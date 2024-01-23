@@ -3947,7 +3947,7 @@ pn.y.ModAdd(&GSn[i].y);
 						if(r) {
 							
 							r = bsgs_secondcheck(&base_key,((j*1024) + i),k,&keyfound);
-							printf("[+] Try %s   \n",&keyfound);
+							printf("[+] Try %s",&base_key);
 							if(r)	{
 								hextemp = keyfound.GetBase16();
 								printf("[+] Thread Key found privkey %s   \n",hextemp);
